@@ -1,15 +1,8 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.OpenApi.Any;
 using pfie.http.testserver;
 using pfie.http.testserver.animalfacts;
-using System.ComponentModel.DataAnnotations;
-using System.Globalization;
 using System.Net;
-using System.Net.Mime;
-using System.Runtime.CompilerServices;
-using System.Text.Json;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,12 +13,9 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+
     app.UseSwagger();
     app.UseSwaggerUI();
-}
 
 
 var facts = new List<string>()

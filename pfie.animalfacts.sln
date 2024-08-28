@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pfie.OpenApi.Parser", "src\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pfie.utilities", "src\pfie.utilities\pfie.utilities.csproj", "{B2CA9909-CEE6-42D6-AC8D-DA1FA7770E0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pfie.wiremock", "..\pfie.wiremock\pfie.wiremock.csproj", "{4BCECE3C-11AB-4ED7-9ABE-047845ABB9C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{B2CA9909-CEE6-42D6-AC8D-DA1FA7770E0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2CA9909-CEE6-42D6-AC8D-DA1FA7770E0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2CA9909-CEE6-42D6-AC8D-DA1FA7770E0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BCECE3C-11AB-4ED7-9ABE-047845ABB9C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BCECE3C-11AB-4ED7-9ABE-047845ABB9C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BCECE3C-11AB-4ED7-9ABE-047845ABB9C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BCECE3C-11AB-4ED7-9ABE-047845ABB9C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

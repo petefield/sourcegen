@@ -5,13 +5,15 @@ namespace pfie.http.sourcegen
 {
     public class CSharpClientBuilder
     {
+
+
+
         public  static string Build(ServiceDefinition service)
         {
             var sb = new StringBuilder();
             
-           sb.AppendLine($"public partial class {service.Name} :  HttpServiceBase {{");
+            sb.AppendLine($"public partial class {service.Name} :  HttpServiceBase {{");
             sb.AppendLine();
-
 
             sb.AppendLine($"\tpublic AnimalFactsApiClient(HttpClient client, ILogger<{service.Name}> logger) : base(client, logger){{}}");
 
@@ -39,7 +41,7 @@ namespace pfie.http.sourcegen
                 foreach (var prop in schema.Properties)
                 {
 
-                    sb.AppendLine($"   public {MapType(prop)} {prop.Name} {{ get; set; }}");
+                    sb.AppendLine($"  public {MapType(prop)} {prop.Name} {{ get; set; }}");
                 }
 
                 sb.AppendLine("}");

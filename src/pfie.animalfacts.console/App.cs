@@ -18,8 +18,8 @@ internal partial class App : IApp
         Console.ReadKey();
 
 
-        var serviceDef = await OpenApiParser.Parse("animals", "https://localhost:32774/swagger/v1/swagger.json");
-        var code = pfie.http.sourcegen.CSharpClientBuilder.Build(serviceDef);
+        var serviceDef = await OpenApiParser.Parse("animals", "http://localhost:7070/swagger/v1/swagger.json");
+        var code = pfie.http.sourcegen.CSharpMockBuilder.Build(serviceDef);
 
         Console.WriteLine(code);
     }

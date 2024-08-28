@@ -3,7 +3,7 @@ using pfie.http.sourcegen;
 
 namespace pfie.animalfacts.infra
 {
-    [GenerateHttpClient("AnimalFactsApi", "https://localhost:32774/swagger/index.html")]
+    [GenerateHttpClient("AnimalFactsApi", "http://localhost:7070/swagger/v1/swagger.json")]
     public partial class AnimalFactsApiClient 
     { }
 }

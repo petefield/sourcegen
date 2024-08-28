@@ -45,13 +45,16 @@ namespace pfie.OpenApi.Parser
 
                         if (!r.Value.Content?.Any() ?? false)
                             content = null;
+
                         else
                         {
                             var s = r.Value.Content.First().Value!;
+
                             if (s.Schema.Items is null)
                                 content = new ContentDef(s.Schema.Type, s.Schema.Reference.Id, ((OpenApiString)s.Example)?.Value?.ToString());
                             else
                                 content = new ContentDef(s.Schema.Type, s.Schema.Items.Reference.Id, null);
+                  
                         }
 
                         responseDefs.Add(new ResponseDef(status, description, content));

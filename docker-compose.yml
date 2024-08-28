@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  pfie.http.testserver:
+    image: ${DOCKER_REGISTRY-}pfiehttptestserver
+    build:
+      context: ./src/pfie.http.testserver
+      dockerfile: Dockerfile
+    ports:
+        - 8070:80
